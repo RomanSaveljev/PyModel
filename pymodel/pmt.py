@@ -108,7 +108,7 @@ def RunTest(options, mp, stepper, strategy, f, krun):
       print aname if options.quiet else '%s%s' % (aname, args)
     if options.output:
       if qResult != None:
-        f.write('    (%s, %s, %s),\n' % (aname, args, repr(qResult[1:-1]))
+        f.write('    (%s, %s, %s),\n' % (aname, args, repr(qResult[1:-1])))
       else:
         f.write('    (%s, %s),\n' % (aname, args)) # optional missing result
 
